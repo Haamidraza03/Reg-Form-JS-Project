@@ -4,28 +4,29 @@
     
     flex-wrap: wrap;
     width:261px;
-    border:1px solid rgb(226, 115, 115);
+    border:0.001px solid rgb(226, 115, 115);
     margin:50px auto;
-    margin-top: 135px;
-    border-radius: 20px;
+    margin-top: 120px;
+    border-radius: 17px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
 .card:hover{
-    /* -webkit-box-shadow: 5px 5px 20px 10px rgb(179, 173, 173);
-    box-shadow: 5px 5px 20px 10px rgb(179, 173, 173); */
-    -webkit-box-shadow: 5px 5px 20px 10px rgb(255, 182, 182);
-    box-shadow: 5px 5px 20px 10px rgb(255, 182, 182);
+    -webkit-box-shadow: 5px 5px 20px 10px rgb(179, 173, 173);
+    box-shadow: 5px 5px 20px 10px rgb(179, 173, 173);
+    /* -webkit-box-shadow: 5px 5px 20px 10px rgb(255, 182, 182);
+    box-shadow: 5px 5px 20px 10px rgb(255, 182, 182); */
     transition: 0.4s ease-in-out;
 }
 
 .inp{
     width:85%;
-    font-size: 13px;
+    font-size: 15px;
     padding: 10px 5px;
-    border-radius: 12px;
-    margin-top: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left:14px;
     border: 1px solid grey;
 }
 
@@ -48,8 +49,8 @@ h2{
     background-color: rgb(226, 115, 115);
     width:260px;
     height:50px;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+    border-top-right-radius: 17px;
+    border-top-left-radius: 17px;
 }
 
 hr{
@@ -57,20 +58,23 @@ hr{
 }
 
 #btn{
-    width:70%;
+    width:90%;
     background-color: rgb(24, 197, 24);
     color:white;
     border:none;
-    border-radius: 20px;
+    border-radius: 14px;
+    font-size:16px;
+    font-weight: bolder;
     padding:7px 7px;
     margin: 7px 0px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-left:13px;
+    margin-bottom: 13px;
     cursor: pointer;
 }
 
 #btn:hover{
-    border:2px dotted rgb(226, 115, 115);
+    border:1.5px dotted white;
     transition: 0.1s ease-in-out;
 }
 
@@ -78,7 +82,7 @@ hr{
 {
     width:85%;
     border:1px solid  rgb(226, 115, 115);
-    border-radius: 20px;
+    border-radius: 14px;
     padding: 10px 5px;
     font-size: 12px;
     margin-top:10px;

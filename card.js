@@ -15,7 +15,17 @@ function addUser()
 
     if(check==1)
     {
-        alert("User Already Exist!!!. Please Enter Your Email")
+        // alert("User Already Exist!!!")
+        let err=document.getElementById('error');
+        err.classList.add("ealert");
+        err.classList.remove('dnone');
+        setTimeout(()=>
+        {
+            err.classList.remove('ealert');
+            err.classList.add('dnone');
+        },2000)
+        document.getElementById('email').value="";
+        check=0;
     }
     else
     {
@@ -24,7 +34,7 @@ function addUser()
             email:tempemail,
         }
         User.push(tempUser);
-        alert("Successfully Registered!!!")
+        // alert("Successfully Registered!!!")
 
         let parent=document.getElementById('container');
         let divTag=document.createElement('div');
@@ -38,6 +48,15 @@ function addUser()
         divTag.classList.add('Users');
         document.getElementById('name').value="";
         document.getElementById('email').value="";
-        console.log(User);
+        // console.log(User);
+
+        let suc=document.getElementById('sucreg');
+        suc.classList.add('salert');
+        suc.classList.remove('dnone');
+        setTimeout(()=>
+        {
+            suc.classList.remove('salert');
+            suc.classList.add('dnone');
+        },2000)
     }
 }
